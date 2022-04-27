@@ -4,7 +4,6 @@ import { HeaderItm } from "./components/header/HeaderItm";
 import Carousel, { CarouselItem } from './components/content/Carousel';
 
 
-
 function App() {
   return (
    

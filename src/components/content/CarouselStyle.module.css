@@ -18,9 +18,18 @@
 
 .indicators{
     display: flex;
+    gap: 50px;
     justify-content: center;
 }
 
 .indicators > button {
     margin: 5px;
+}
+
+.arrow{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
 }

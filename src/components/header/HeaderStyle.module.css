@@ -1,12 +1,16 @@
+
 .gobMex{
     background-color: black;
     padding-left: 50px;
     text-align: left;
 }
 .instituciones{
-    position: relative;
-    background-color: white;
-    text-align: left;
     display: flex;
     flex-wrap: nowrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 50px;
+    justify-content: flex-start;
+    position: relative;
+    background-color: white;
 }

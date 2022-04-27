@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from "./CarouselStyle.module.css";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export const CarouselItem = ({children, width}) => {
   return (
@@ -15,9 +16,10 @@ const Carousel = ({ children }) => {
 
     const updateIndex = (newIndex) => {
         if(newIndex < 0){
-            newIndex = 0
-        } else if ( newIndex >= React.Children.count(children)) {
             newIndex = React.Children.count(children) - 1;
+            
+        } else if ( newIndex >= React.Children.count(children)) {
+            newIndex = 0
         }
 
         setActiveIndex(newIndex)
@@ -36,21 +38,20 @@ const Carousel = ({ children }) => {
 
                 </div>
             </div>
+            <br/>
             <div className={styles.indicators}>
-                <button
+                <FaArrowLeft className={styles.arrow} 
                     onClick={() => {
                         updateIndex(activeIndex - 1)
                     }}
                 >
-                Prev
-                </button>
-                <button
+                </FaArrowLeft>
+                <FaArrowRight className={styles.arrow} 
                     onClick={() => {
                         updateIndex(activeIndex + 1)
                     }}
                 >
-                Next
-                </button>
+                </FaArrowRight>
             </div>
         
         </>
