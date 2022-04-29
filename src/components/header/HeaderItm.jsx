@@ -3,13 +3,15 @@ import styles from "./HeaderStyle.module.css";
 
 export function HeaderItm() {
   return (
-        
+
     <div>
+
+      {/* Barra superior */}
 
       <div className={styles.gobMex}>
 
-        <a href='https://www.gob.mx/'>
-          <img 
+        <a href='https://www.gob.mx/' target={'_blank'} rel='noopener noreferrer'>
+          <img
             src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
             alt="logo01"
             width="128"
@@ -18,33 +20,59 @@ export function HeaderItm() {
         </a>
       </div>
 
+      {/* Barra de logos */}
+
       <div>
 
-        <br/>
+        <br />
         <div className={styles.instituciones} >
-          <a href='https://www.gob.mx/'>
-            <img 
-              src={require('../../assets/gob1.png')}
-              alt="logoGob"
-            />
-          </a>
-          <a href='https://www.gob.mx/sep'>
-            <img 
-              src={require('../../assets/sep.png')}
+
+          {/* Logo Educacion */}
+
+          <a href='https://www.gob.mx/sep' target={'_blank'} rel='noopener noreferrer'>
+            <img
+              src={require('../../assets/educacionLogo2.png')}
               alt="logoSep"
+              height={'100px'}
+              width={'350px'}
             />
           </a>
-          <a href='https://www.tecnm.mx/'>
-            <img 
-              src={require('../../assets/itm.png')}
-              alt="logoTM"
+
+          {/* Logo Itm */}
+
+          <a href='https://www.tecnm.mx/' target={'_blank'} rel='noopener noreferrer'>
+            <img
+              src={require('../../assets/LogoTecnm.png')}
+              alt="logoTNM"
+              height={'100px'}
+              width={'205px'}
+            />
+          </a>
+
+          {/* Titulo pagina */}
+
+          <img
+            src={require('../../assets/tituloTexto.png')}
+            alt="tituloMaestria"
+            height={'100px'}
+            width={'610px'}
+          />
+
+          {/* Logo itmorelia */}
+
+          <a href='https://www.morelia.tecnm.mx/#/' target={'_blank'} rel='noopener noreferrer'>
+            <img
+              src={require('../../assets/LogoITM.png')}
+              alt="logoITM"
+              height={'100px'}
+              width={'100px'}
             />
           </a>
         </div>
-        <br/>
-        
+        <br />
+
       </div>
-      
+
     </div>
 
   )
