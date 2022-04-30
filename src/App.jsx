@@ -1,17 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import { HeaderItm } from "./components/header/HeaderItm";
 import Carousel, { CarouselItem } from './components/content/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComp from './components/Navbar/NavbarComp';
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
-
 
     <div className="App">
 
       {/* Header */}
 
       <HeaderItm />
+
+      {/* Navbar */}
+
+      <NavbarComp />
       <hr />
 
       {/* Carrusel de imagenes */}
@@ -99,6 +104,12 @@ function App() {
           </div>
         </CarouselItem>
       </Carousel>
+
+      <br />
+
+      {/* Footer */}
+
+      <Footer />
 
     </div>
 
