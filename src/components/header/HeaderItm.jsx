@@ -10,7 +10,7 @@ export function HeaderItm() {
 
       <div className={styles.gobMex}>
 
-        <a href='https://www.gob.mx/' target={'_blank'} rel='noopener noreferrer'>
+        <a href='https://www.gob.mx/'>
           <img
             src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
             alt="logo01"
@@ -29,7 +29,7 @@ export function HeaderItm() {
 
           {/* Logo Educacion */}
 
-          <a href='https://www.gob.mx/sep' target={'_blank'} rel='noopener noreferrer'>
+          <a href='https://www.gob.mx/sep'>
             <img
               src={require('../../assets/educacionLogo2.png')}
               alt="logoSep"
@@ -40,7 +40,7 @@ export function HeaderItm() {
 
           {/* Logo Itm */}
 
-          <a href='https://www.tecnm.mx/' target={'_blank'} rel='noopener noreferrer'>
+          <a href='https://www.tecnm.mx/'>
             <img
               src={require('../../assets/LogoTecnm.png')}
               alt="logoTNM"
@@ -60,7 +60,7 @@ export function HeaderItm() {
 
           {/* Logo itmorelia */}
 
-          <a href='https://www.morelia.tecnm.mx/#/' target={'_blank'} rel='noopener noreferrer'>
+          <a href='https://www.morelia.tecnm.mx/#/'>
             <img
               src={require('../../assets/LogoITM.png')}
               alt="logoITM"
