@@ -17,7 +17,6 @@ function App() {
       {/* Navbar */}
 
       <NavbarComp />
-      <hr />
 
       {/* Carrusel de imagenes */}
 
