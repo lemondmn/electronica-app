@@ -8,7 +8,7 @@ export function HeaderItm() {
 
       {/* Barra superior */}
 
-      <div className={styles.gobMex}>
+      <div className={styles.gob}>
 
         <a href='https://www.gob.mx/'>
           <img
@@ -25,7 +25,7 @@ export function HeaderItm() {
       <div>
 
         <br />
-        <div className={styles.instituciones} >
+        <div className={styles.logos} >
 
           {/* Logo Educacion */}
 
@@ -69,7 +69,6 @@ export function HeaderItm() {
             />
           </a>
         </div>
-        <br />
 
       </div>
 
