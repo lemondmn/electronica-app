@@ -7,7 +7,7 @@ export default class Login extends Component {
             <div>
                 <>
                 <div>
-                    <div className={styles.login}>
+                    <form className={styles.login}>
                         <div className={styles.login_screen}>
                             <div className={styles.app_title}>
                                 <h1>Iniciar Sesion</h1>
@@ -19,16 +19,16 @@ export default class Login extends Component {
                                         <label className={`${styles.login_field_icon} ${styles.fui_user}`} for="login-name"></label>
                                 </div>
 
-                                <div class={styles.control_group}>
+                                <div className={styles.control_group}>
                                     <input type="password" class={styles.login_field} value="" placeholder="Contraseña" id="login-pass" />
-                                        <label class={`${styles.login_field_icon} ${styles.fui_lock}`} for="login-pass"></label>
+                                        <label className={`${styles.login_field_icon} ${styles.fui_lock}`} for="login-pass"></label>
                                 </div>
 
-                                <a class={`${styles.btn} ${styles.btn_primary} ${styles.btn_large} ${styles.btn_block}`   } href="#">Iniciar</a>
+                                <button className={`${styles.btn} ${styles.btn_primary} ${styles.btn_large} ${styles.btn_block}`   } href="#">Iniciar</button>
                                 <a class={styles.login_link} href="#">Olvide mi contraseña</a>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 </>
             </div>
