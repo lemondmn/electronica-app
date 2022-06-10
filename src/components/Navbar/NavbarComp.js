@@ -12,37 +12,37 @@ export default class NavbarComp extends Component {
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
                             {/* */}
-ç
+                            
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto">
-                                    <Nav.Link href="#index">
+                                    <Nav.Link href="/">
                                         <FaHome></FaHome> Inicio
                                     </Nav.Link>
-                                    <Nav.Link href="#info">
+                                    <Nav.Link href="/info">
                                         <FaInfoCircle></FaInfoCircle> Información
                                     </Nav.Link>
-                                    <Nav.Link href="#collab">
+                                    <Nav.Link href="/collab">
                                         <FaUsers></FaUsers> Colaboración
                                     </Nav.Link>
-                                    <Nav.Link href="#alumnos">
+                                    <Nav.Link href="/alumnos">
                                         <FaUserGraduate></FaUserGraduate> Alumnos
                                     </Nav.Link>
-                                    <Nav.Link href="#personal">
+                                    <Nav.Link href="/personal">
                                         <FaUserTie></FaUserTie> Personal
                                     </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
 
                             <Nav className="auto">
-                                <Nav.Link href="#acceso">
+                                <Nav.Link href="/login">
                                     <FaSignInAlt></FaSignInAlt> Acceso
                                 </Nav.Link>
                             </Nav>
-                             
+
                         </Container>
                     </Navbar>
                 </>
-        
+
             </div>
         )
     }
