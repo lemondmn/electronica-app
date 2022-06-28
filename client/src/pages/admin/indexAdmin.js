@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export class Collab extends Component {
+export class IndexAdmin extends Component {
     render() {
         return (
             <div>
-                <p>Aquí es la Colaboración</p>
+                <p>Modo Admin</p>
             </div>
         )
     }

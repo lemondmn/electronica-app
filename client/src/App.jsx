@@ -4,15 +4,24 @@ import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComp from "./components/Navbar/NavbarComp";
 import Footer from "./components/footer/Footer";
-import { Home } from "./pages/home"
-import { Info } from "./pages/info"
-import { Collab } from "./pages/collab"
-import { Alumnos } from "./pages/alumnos"
-import { Personal } from "./pages/personal"
-import { Login } from "./pages/login"
-import { NotFound} from "./pages/notFound"
+import { Home } from "./pages/public/home"
+import { Info } from "./pages/public/info"
+import { Collab } from "./pages/public/collab"
+import { Alumnos } from "./pages/public/alumnos"
+import { Personal } from "./pages/public/personal"
+import { Login } from "./pages/public/login"
+import { NotFound } from "./pages/notFound"
 
 function App() {
+
+  const isLogged = 1;
+
+  if (isLogged == 0) {
+
+  } else {
+
+  }
+
   return (
     <div className="App">
 
@@ -23,8 +32,8 @@ function App() {
       {/* Navbar */}
 
       <BrowserRouter>
-      <NavbarComp />
-      
+        <NavbarComp />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/info' element={<Info />} />
@@ -41,8 +50,10 @@ function App() {
       {/* Footer */}
 
       <Footer />
+
     </div>
   );
+
 }
 
 export default App;
